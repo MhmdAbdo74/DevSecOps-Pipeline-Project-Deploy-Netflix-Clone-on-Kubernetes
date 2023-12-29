@@ -28,12 +28,17 @@ pipeline {
               }
                 stage("quality gate") {
             steps {
-                script {
-                    timeout(time: 1, unit: 'HOURS')
+                    timeout(time: 1, unit: 'HOURS'){
                     waitForQualityGate abortPipeline: true
+                    }
                 }
             }
-        
     }
+              stage('Install Dependencies') {
+            steps {
+                sh "npm install"
+            }
+        }
+
 }
     }
