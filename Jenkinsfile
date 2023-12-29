@@ -24,6 +24,12 @@ pipeline {
                     sh '''$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Netflix \
                     -Dsonar.projectKey=Netflix'''
                 }
+                stage("quality gate") {
+            steps {
+                script {
+                    waitForQualityGate abortPipeline: false
+                }
+            }
         
     }
 }
