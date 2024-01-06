@@ -23,10 +23,9 @@
 ![Screenshot from 2024-01-06 01-26-01](https://github.com/MhmdAbdo74/DevSecOps-Pipeline-Project-Deploy-Netflix-Clone-on-Kubernetes/assets/94086189/943b27a5-6698-4c5e-8b4f-c607751f3f5f)
 
 
-### Deploy Application with ArgoCD
+3. **Deploy Application with ArgoCD**
 ![Screenshot from 2024-01-06 01-25-14](https://github.com/MhmdAbdo74/DevSecOps-Pipeline-Project-Deploy-Netflix-Clone-on-Kubernetes/assets/94086189/99e98b98-08f7-49fe-9a8a-84677a46fb6a)
 
 3. **: Cleanup**
-
-4. **Cleanup AWS EC2 Instances:**
+ **Cleanup AWS EC2 Instances:**
     - Terminate AWS EC2 instances that are no longer needed.
